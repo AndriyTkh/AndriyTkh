@@ -19,7 +19,7 @@ canvas#glyphs{position:absolute;top:0;left:0;width:100%;height:100%;opacity:0.07
 .section-label::after{content:'';flex:1;height:0.5px;background:var(--border)}
 
 .proj-list{margin-bottom:2.5rem}
-.proj{display:grid;grid-template-columns:32px 1fr auto;gap:0 16px;align-items:start;border-bottom:0.5px solid var(--border);padding:1rem 0;cursor:pointer;transition:opacity 0.15s}
+.proj{display:grid;grid-template-columns:32px 1fr auto;gap:0 16px;align-items:start;border-bottom:0.5px solid var(--border);padding:1rem 0;cursor:pointer;transition:opacity 0.15s;text-decoration:none;color:inherit}
 .proj:hover .proj-title{color:var(--accent)}
 .proj-num{font-size:10px;color:var(--dim);padding-top:4px;letter-spacing:0.1em}
 .proj-title{font-size:15px;font-weight:700;color:var(--paper);letter-spacing:-0.01em;font-family:'Georgia',serif;margin-bottom:4px}
@@ -64,7 +64,7 @@ canvas#glyphs{position:absolute;top:0;left:0;width:100%;height:100%;opacity:0.07
   <div class="section-label">selected work</div>
 
   <div class="proj-list">
-    <div class="proj" onclick="openLink('https://github.com/AndriyTkh/RuiLinn')">
+    <a class="proj" href="https://github.com/AndriyTkh/RuiLinn" target="_blank" rel="noopener noreferrer">
       <div class="proj-num">01</div>
       <div>
         <div class="proj-title">RuiLinn</div>
@@ -74,9 +74,9 @@ canvas#glyphs{position:absolute;top:0;left:0;width:100%;height:100%;opacity:0.07
         </div>
       </div>
       <div class="proj-arrow">↗</div>
-    </div>
+    </a>
 
-    <div class="proj" onclick="openLink('https://github.com/kspt2026/hk_kspt')">
+    <a class="proj" href="https://github.com/kspt2026/hk_kspt" target="_blank" rel="noopener noreferrer">
       <div class="proj-num">02</div>
       <div>
         <div class="proj-title">Backtrace</div>
@@ -86,9 +86,9 @@ canvas#glyphs{position:absolute;top:0;left:0;width:100%;height:100%;opacity:0.07
         </div>
       </div>
       <div class="proj-arrow">↗</div>
-    </div>
+    </a>
 
-    <div class="proj" onclick="openLink('https://github.com/AndriyTkh/marv2x')">
+    <a class="proj" href="https://github.com/AndriyTkh/marv2x" target="_blank" rel="noopener noreferrer">
       <div class="proj-num">03</div>
       <div>
         <div class="proj-title">Marvilon</div>
@@ -98,9 +98,9 @@ canvas#glyphs{position:absolute;top:0;left:0;width:100%;height:100%;opacity:0.07
         </div>
       </div>
       <div class="proj-arrow">↗</div>
-    </div>
+    </a>
 
-    <div class="proj" onclick="openLink('https://travel-app-2-psi.vercel.app/')">
+    <a class="proj" href="https://travel-app-2-psi.vercel.app/" target="_blank" rel="noopener noreferrer">
       <div class="proj-num">04</div>
       <div>
         <div class="proj-title">Travel App</div>
@@ -110,9 +110,9 @@ canvas#glyphs{position:absolute;top:0;left:0;width:100%;height:100%;opacity:0.07
         </div>
       </div>
       <div class="proj-arrow">↗</div>
-    </div>
+    </a>
 
-    <div class="proj" onclick="openLink('https://yajix.itch.io/echoplain')">
+    <a class="proj" href="https://yajix.itch.io/echoplain" target="_blank" rel="noopener noreferrer">
       <div class="proj-num">05</div>
       <div>
         <div class="proj-title">Echoplain</div>
@@ -122,7 +122,7 @@ canvas#glyphs{position:absolute;top:0;left:0;width:100%;height:100%;opacity:0.07
         </div>
       </div>
       <div class="proj-arrow">↗</div>
-    </div>
+    </a>
   </div>
 
   <div class="section-label">stack</div>
@@ -183,8 +183,6 @@ canvas#glyphs{position:absolute;top:0;left:0;width:100%;height:100%;opacity:0.07
 </div>
 
 <script>
-function openLink(url) { window.open(url, '_blank', 'noopener,noreferrer'); }
-
 const aurebesh = {
   A:'M 2,14 L 7,2 L 12,14',
   B:'M 2,2 L 2,14 M 2,2 Q 10,2 10,8 Q 10,14 2,14 M 2,8 L 8,8',
