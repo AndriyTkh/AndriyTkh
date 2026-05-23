@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="200" viewBox="0 0 800 200">
+  <rect width="800" height="200" fill="#0a0a0a"/>
+
+  <!-- Aurebesh background glyphs -->
+  <g stroke="#ffffff" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.07">
+    <!-- scattered glyphs: A M R I Y T K H O E N -->
+    <!-- A at 30,20 scale 2.2 -->
+    <g transform="translate(30,18) scale(2.2)"><path d="M 2,14 L 7,2 L 12,14"/></g>
+    <!-- N at 80,10 scale 1.6 -->
+    <g transform="translate(78,8) scale(1.6)"><path d="M 2,14 L 2,2 L 12,14 L 12,2"/></g>
+    <!-- D at 130,30 scale 1.8 -->
+    <g transform="translate(128,28) scale(1.8)"><path d="M 2,2 L 2,14 M 2,2 Q 13,2 13,8 Q 13,14 2,14"/></g>
+    <!-- R at 200,5 scale 2.5 -->
+    <g transform="translate(198,3) scale(2.5)"><path d="M 2,14 L 2,2 M 2,2 Q 11,2 11,7 Q 11,12 2,8 M 7,8 L 12,14"/></g>
+    <!-- I at 270,25 scale 1.5 -->
+    <g transform="translate(268,23) scale(1.5)"><path d="M 5,2 L 9,2 M 7,2 L 7,14 M 5,14 L 9,14"/></g>
+    <!-- Y at 310,10 scale 2.0 -->
+    <g transform="translate(308,8) scale(2.0)"><path d="M 2,2 L 7,8 L 12,2 M 7,8 L 7,14"/></g>
+    <!-- T at 370,20 scale 2.2 -->
+    <g transform="translate(368,18) scale(2.2)"><path d="M 2,2 L 12,2 M 7,2 L 7,14"/></g>
+    <!-- K at 430,5 scale 1.9 -->
+    <g transform="translate(428,3) scale(1.9)"><path d="M 2,2 L 2,14 M 12,2 L 2,8 L 12,14"/></g>
+    <!-- H at 490,25 scale 2.1 -->
+    <g transform="translate(488,23) scale(2.1)"><path d="M 2,2 L 2,14 M 12,2 L 12,14 M 2,8 L 12,8"/></g>
+    <!-- O at 555,8 scale 1.7 -->
+    <g transform="translate(553,6) scale(1.7)"><path d="M 7,2 Q 2,2 2,8 Q 2,14 7,14 Q 12,14 12,8 Q 12,2 7,2"/></g>
+    <!-- E at 610,15 scale 2.3 -->
+    <g transform="translate(608,13) scale(2.3)"><path d="M 12,2 L 2,2 L 2,14 L 12,14 M 2,8 L 9,8"/></g>
+    <!-- N at 680,5 scale 1.8 -->
+    <g transform="translate(678,3) scale(1.8)"><path d="M 2,14 L 2,2 L 12,14 L 12,2"/></g>
+    <!-- M at 740,20 scale 1.6 -->
+    <g transform="translate(738,18) scale(1.6)"><path d="M 2,14 L 2,2 L 7,8 L 12,2 L 12,14"/></g>
+
+    <!-- second row deeper -->
+    <!-- F at 15,90 scale 1.4 -->
+    <g transform="translate(13,85) scale(1.4)"><path d="M 2,14 L 2,2 L 12,2 M 2,8 L 9,8"/></g>
+    <!-- U at 60,100 scale 2.0 -->
+    <g transform="translate(58,95) scale(2.0)"><path d="M 2,2 L 2,11 Q 2,14 7,14 Q 12,14 12,11 L 12,2"/></g>
+    <!-- L at 120,88 scale 1.7 -->
+    <g transform="translate(118,83) scale(1.7)"><path d="M 2,2 L 2,14 L 12,14"/></g>
+    <!-- S at 170,95 scale 1.5 -->
+    <g transform="translate(168,90) scale(1.5)"><path d="M 12,3 Q 2,2 2,7 Q 2,9 12,9 Q 12,14 2,13"/></g>
+    <!-- T at 220,80 scale 2.1 -->
+    <g transform="translate(218,75) scale(2.1)"><path d="M 2,2 L 12,2 M 7,2 L 7,14"/></g>
+    <!-- A at 290,100 scale 1.6 -->
+    <g transform="translate(288,95) scale(1.6)"><path d="M 2,14 L 7,2 L 12,14"/></g>
+    <!-- C at 340,82 scale 1.9 -->
+    <g transform="translate(338,77) scale(1.9)"><path d="M 12,3 Q 2,2 2,8 Q 2,14 12,13"/></g>
+    <!-- K at 400,95 scale 1.5 -->
+    <g transform="translate(398,90) scale(1.5)"><path d="M 2,2 L 2,14 M 12,2 L 2,8 L 12,14"/></g>
+    <!-- G at 455,80 scale 2.0 -->
+    <g transform="translate(453,75) scale(2.0)"><path d="M 11,3 Q 2,2 2,8 Q 2,14 11,13 M 11,8 L 7,8"/></g>
+    <!-- W at 520,95 scale 1.6 -->
+    <g transform="translate(518,90) scale(1.6)"><path d="M 2,2 L 4,14 L 7,8 L 10,14 L 12,2"/></g>
+    <!-- E at 575,80 scale 2.2 -->
+    <g transform="translate(573,75) scale(2.2)"><path d="M 12,2 L 2,2 L 2,14 L 12,14 M 2,8 L 9,8"/></g>
+    <!-- B at 640,92 scale 1.7 -->
+    <g transform="translate(638,87) scale(1.7)"><path d="M 2,2 L 2,14 M 2,2 Q 10,2 10,8 Q 10,14 2,14 M 2,8 L 8,8"/></g>
+    <!-- Z at 700,80 scale 1.8 -->
+    <g transform="translate(698,75) scale(1.8)"><path d="M 2,2 L 12,2 L 2,14 L 12,14"/></g>
+    <!-- V at 760,95 scale 1.5 -->
+    <g transform="translate(758,90) scale(1.5)"><path d="M 2,2 L 7,14 L 12,2"/></g>
+
+    <!-- bottom row -->
+    <g transform="translate(20,148) scale(1.8)"><path d="M 2,2 L 12,2 M 7,2 L 7,14"/></g>
+    <g transform="translate(75,158) scale(1.5)"><path d="M 2,14 L 2,2 L 7,8 L 12,2 L 12,14"/></g>
+    <g transform="translate(130,142) scale(2.0)"><path d="M 2,14 L 7,2 L 12,14"/></g>
+    <g transform="translate(192,155) scale(1.6)"><path d="M 2,2 L 2,14 M 12,2 L 12,14 M 2,8 L 12,8"/></g>
+    <g transform="translate(248,140) scale(1.9)"><path d="M 7,2 Q 2,2 2,8 Q 2,14 7,14 Q 12,14 12,8 Q 12,2 7,2"/></g>
+    <g transform="translate(310,155) scale(1.5)"><path d="M 2,14 L 2,2 L 12,14 L 12,2"/></g>
+    <g transform="translate(365,142) scale(2.1)"><path d="M 12,3 Q 2,2 2,8 Q 2,14 12,13"/></g>
+    <g transform="translate(428,155) scale(1.7)"><path d="M 2,2 L 2,14 M 2,2 Q 10,2 10,8 Q 10,14 2,14 M 2,8 L 8,8"/></g>
+    <g transform="translate(488,140) scale(1.6)"><path d="M 2,14 L 2,2 Q 11,2 11,7 Q 11,12 2,8 M 7,8 L 12,14"/></g>
+    <g transform="translate(545,155) scale(2.0)"><path d="M 2,2 L 12,2 L 2,14 L 12,14"/></g>
+    <g transform="translate(610,142) scale(1.8)"><path d="M 2,2 L 7,14 L 12,2"/></g>
+    <g transform="translate(668,158) scale(1.5)"><path d="M 2,14 L 2,2 L 12,2 M 2,8 L 9,8"/></g>
+    <g transform="translate(725,140) scale(2.0)"><path d="M 2,2 L 2,11 Q 2,14 7,14 Q 12,14 12,11 L 12,2"/></g>
+    <g transform="translate(775,155) scale(1.6)"><path d="M 2,2 L 2,14 M 2,2 Q 13,2 13,8 Q 13,14 2,14"/></g>
+  </g>
+
+  <!-- top micro label -->
+  <text x="40" y="38" font-family="'Courier New', monospace" font-size="9" fill="#555" letter-spacing="3">PORTFOLIO · FULL-STACK · AI · GAMEDEV</text>
+
+  <!-- main name -->
+  <text x="40" y="100" font-family="Georgia, serif" font-size="54" font-weight="700" fill="#f5f3ee" letter-spacing="-1">ANDRII</text>
+  <text x="40" y="148" font-family="Georgia, serif" font-size="54" font-weight="700" fill="#c8ff00" letter-spacing="-1">TKHORENKO</text>
+
+  <!-- right side Aurebesh inline spelling ANDRII in glyphs -->
+  <g transform="translate(590, 62)" stroke="#c8ff00" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.55">
+    <!-- A -->
+    <g transform="translate(0,0) scale(1.5)"><path d="M 2,14 L 7,2 L 12,14"/></g>
+    <!-- N -->
+    <g transform="translate(22,0) scale(1.5)"><path d="M 2,14 L 2,2 L 12,14 L 12,2"/></g>
+    <!-- D -->
+    <g transform="translate(44,0) scale(1.5)"><path d="M 2,2 L 2,14 M 2,2 Q 13,2 13,8 Q 13,14 2,14"/></g>
+    <!-- R -->
+    <g transform="translate(66,0) scale(1.5)"><path d="M 2,14 L 2,2 M 2,2 Q 11,2 11,7 Q 11,12 2,8 M 7,8 L 12,14"/></g>
+    <!-- I -->
+    <g transform="translate(88,0) scale(1.5)"><path d="M 5,2 L 9,2 M 7,2 L 7,14 M 5,14 L 9,14"/></g>
+    <!-- I -->
+    <g transform="translate(110,0) scale(1.5)"><path d="M 5,2 L 9,2 M 7,2 L 7,14 M 5,14 L 9,14"/></g>
+  </g>
+  <text x="590" y="120" font-family="'Courier New', monospace" font-size="8" fill="#555" letter-spacing="2">A · N · D · R · I · I</text>
+
+  <!-- bottom rule + tagline -->
+  <line x1="40" y1="165" x2="520" y2="165" stroke="#222" stroke-width="0.5"/>
+  <text x="40" y="182" font-family="'Courier New', monospace" font-size="10" fill="#666" letter-spacing="1">KYIV, UKRAINE</text>
+  <text x="175" y="182" font-family="'Courier New', monospace" font-size="10" fill="#333" letter-spacing="1"> · </text>
+  <text x="190" y="182" font-family="'Courier New', monospace" font-size="10" fill="#666" letter-spacing="1">REACT · PYTHON · UNITY</text>
+  <text x="390" y="182" font-family="'Courier New', monospace" font-size="10" fill="#333" letter-spacing="1"> · </text>
+  <text x="405" y="182" font-family="'Courier New', monospace" font-size="10" fill="#666" letter-spacing="1">OPEN TO REMOTE</text>
+</svg>
