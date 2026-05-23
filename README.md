@@ -48,14 +48,14 @@ Open to remote work, freelance, and long-term collaboration.
 | 🗣 languages | Ukrainian (native) · English (professional) |
 | 🎓 education | GoIT Fullstack · KPI |
 | 🎮 gamedev | [yajix.itch.io](https://yajix.itch.io) |
-| 📫 contact | your.email@here.com |
+| 📫 contact | andriytkh@icloud.com |
 
 ---
 
 <div align="center">
   <a href="https://github.com/AndriyTkh">GitHub</a> &nbsp;·&nbsp;
   <a href="https://yajix.itch.io">itch.io</a> &nbsp;·&nbsp;
-  <a href="#">LinkedIn</a>
+  <a href="https://www.linkedin.com/in/andriy-thorenko">LinkedIn</a>
   <br><br>
   <sub><code>ANDRII TKHORENKO © 2026</code></sub>
 </div>
