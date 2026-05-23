@@ -1,0 +1,278 @@
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--ink:#0a0a0a;--paper:#f5f3ee;--dim:#888;--border:#222;--accent:#c8ff00}
+body,html{background:var(--ink)}
+.wrap{background:var(--ink);color:var(--paper);font-family:'Courier New',monospace;min-height:100vh;padding:0;position:relative;overflow:hidden}
+canvas#glyphs{position:absolute;top:0;left:0;width:100%;height:100%;opacity:0.07;pointer-events:none;z-index:0}
+.content{position:relative;z-index:1;padding:2.5rem 2rem 2rem}
+
+.hero{border-bottom:0.5px solid var(--border);padding-bottom:2rem;margin-bottom:2rem}
+.hero-tag{font-size:10px;letter-spacing:0.2em;color:var(--dim);text-transform:uppercase;margin-bottom:1.2rem}
+.hero-name{font-size:clamp(36px,8vw,72px);font-weight:700;line-height:0.95;letter-spacing:-0.02em;color:var(--paper);font-family:'Georgia',serif}
+.hero-name span{color:var(--accent)}
+.hero-sub{font-size:12px;color:var(--dim);margin-top:1.2rem;letter-spacing:0.08em;text-transform:uppercase;line-height:1.8}
+.hero-sub b{color:var(--paper);font-weight:400}
+.glyph-inline{font-size:16px;vertical-align:middle;opacity:0.4;margin:0 4px}
+
+.section-label{font-size:10px;letter-spacing:0.25em;color:var(--dim);text-transform:uppercase;margin-bottom:1.2rem;display:flex;align-items:center;gap:8px}
+.section-label::after{content:'';flex:1;height:0.5px;background:var(--border)}
+
+.proj-list{margin-bottom:2.5rem}
+.proj{display:grid;grid-template-columns:32px 1fr auto;gap:0 16px;align-items:start;border-bottom:0.5px solid var(--border);padding:1rem 0;cursor:pointer;transition:opacity 0.15s}
+.proj:hover .proj-title{color:var(--accent)}
+.proj-num{font-size:10px;color:var(--dim);padding-top:4px;letter-spacing:0.1em}
+.proj-title{font-size:15px;font-weight:700;color:var(--paper);letter-spacing:-0.01em;font-family:'Georgia',serif;margin-bottom:4px}
+.proj-desc{font-size:11px;color:var(--dim);line-height:1.6}
+.proj-tags{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}
+.tag{font-size:9px;letter-spacing:0.12em;text-transform:uppercase;padding:2px 6px;border:0.5px solid var(--border);color:var(--dim)}
+.proj-arrow{font-size:11px;color:var(--dim);padding-top:4px}
+.proj:hover .proj-arrow{color:var(--accent)}
+
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:2.5rem}
+.about-p{font-size:12px;color:var(--dim);line-height:1.8;grid-column:1/-1}
+.fact-label{font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:var(--dim);margin-bottom:3px}
+.fact-val{font-size:13px;color:var(--paper)}
+
+.stack-row{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:2.5rem}
+.stack-item{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;padding:4px 8px;border:0.5px solid var(--border);color:var(--dim)}
+.stack-item.highlight{border-color:#333;color:var(--paper)}
+
+.links-row{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:2.5rem}
+.link-item{font-size:11px;letter-spacing:0.1em;color:var(--dim);text-decoration:none;text-transform:uppercase;border-bottom:0.5px solid var(--border);padding-bottom:2px}
+.link-item:hover{color:var(--accent);border-color:var(--accent)}
+
+.footer{border-top:0.5px solid var(--border);padding-top:1rem;display:flex;justify-content:space-between;align-items:center}
+.footer-txt{font-size:10px;color:#444;letter-spacing:0.1em}
+
+.glyph-banner{font-size:10px;letter-spacing:0.05em;color:#222;overflow:hidden;white-space:nowrap;margin:0.5rem 0 1.5rem;line-height:1}
+</style>
+
+<div class="wrap">
+<canvas id="glyphs"></canvas>
+<div class="content">
+
+  <div class="hero">
+    <div class="hero-tag">portfolio · full-stack · ai · gamedev</div>
+    <div class="hero-name">ANDRII<br><span>TKHORENKO</span></div>
+    <div class="glyph-banner" id="banner-top"></div>
+    <div class="hero-sub">
+      Kyiv, Ukraine &nbsp;·&nbsp; <b>open to remote & freelance</b> &nbsp;·&nbsp; React · Python · Unity
+    </div>
+  </div>
+
+  <div class="section-label">selected work</div>
+
+  <div class="proj-list">
+    <div class="proj" onclick="openLink('https://github.com/AndriyTkh/RuiLinn')">
+      <div class="proj-num">01</div>
+      <div>
+        <div class="proj-title">RuiLinn</div>
+        <div class="proj-desc">Local AI assistant with a real agentic loop — classifier, planner, thinker, verifier. STT via Google Cloud, TTS pipeline, WebSocket comms, custom memory system.</div>
+        <div class="proj-tags">
+          <span class="tag">Python</span><span class="tag">LLMs</span><span class="tag">WebSockets</span><span class="tag">Google Cloud</span><span class="tag">agents</span>
+        </div>
+      </div>
+      <div class="proj-arrow">↗</div>
+    </div>
+
+    <div class="proj" onclick="openLink('https://github.com/kspt2026/hk_kspt')">
+      <div class="proj-num">02</div>
+      <div>
+        <div class="proj-title">Backtrace</div>
+        <div class="proj-desc">Hackathon. Real-time disaster victim tracking — silent push wakes citizen phones, GPS polygon detection, live operator map. Full cross-platform stack in 48h.</div>
+        <div class="proj-tags">
+          <span class="tag">React Native</span><span class="tag">Kotlin</span><span class="tag">Node.js</span><span class="tag">MongoDB</span><span class="tag">Firebase</span>
+        </div>
+      </div>
+      <div class="proj-arrow">↗</div>
+    </div>
+
+    <div class="proj" onclick="openLink('https://github.com/AndriyTkh/marv2x')">
+      <div class="proj-num">03</div>
+      <div>
+        <div class="proj-title">Marvilon</div>
+        <div class="proj-desc">Production company website. Built for a real client — responsive, performant, TypeScript throughout. Next.js.</div>
+        <div class="proj-tags">
+          <span class="tag">Next.js</span><span class="tag">TypeScript</span><span class="tag">React</span>
+        </div>
+      </div>
+      <div class="proj-arrow">↗</div>
+    </div>
+
+    <div class="proj" onclick="openLink('https://travel-app-2-psi.vercel.app/')">
+      <div class="proj-num">04</div>
+      <div>
+        <div class="proj-title">Travel App</div>
+        <div class="proj-desc">Team lead on a full-stack travel platform. Started as dev, stepped up to coordinate the team end-to-end. Live on Vercel.</div>
+        <div class="proj-tags">
+          <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">team lead</span>
+        </div>
+      </div>
+      <div class="proj-arrow">↗</div>
+    </div>
+
+    <div class="proj" onclick="openLink('https://yajix.itch.io/echoplain')">
+      <div class="proj-num">05</div>
+      <div>
+        <div class="proj-title">Echoplain</div>
+        <div class="proj-desc">Game jam entry — story platformer with a hidden mechanic and dual endings. Acerola Jam 0. Play in browser.</div>
+        <div class="proj-tags">
+          <span class="tag">Unity</span><span class="tag">C#</span><span class="tag">gamedev</span>
+        </div>
+      </div>
+      <div class="proj-arrow">↗</div>
+    </div>
+  </div>
+
+  <div class="section-label">stack</div>
+
+  <div class="stack-row">
+    <span class="stack-item highlight">React</span>
+    <span class="stack-item highlight">Next.js</span>
+    <span class="stack-item highlight">TypeScript</span>
+    <span class="stack-item highlight">Node.js</span>
+    <span class="stack-item highlight">Python</span>
+    <span class="stack-item">Unity</span>
+    <span class="stack-item">C#</span>
+    <span class="stack-item">Google Cloud</span>
+    <span class="stack-item">WebSockets</span>
+    <span class="stack-item">MongoDB</span>
+    <span class="stack-item">Redux</span>
+    <span class="stack-item">Vite</span>
+    <span class="stack-item">Git</span>
+  </div>
+
+  <div class="section-label">about</div>
+
+  <div class="about-grid">
+    <p class="about-p">Full-stack developer building web apps, AI agents, and 2D games. Comfortable across the stack and between paradigms — from React UIs to agentic Python pipelines to Unity scenes. GoIT Full-Stack graduate. Currently focused on multimodal AI systems and whatever weird idea comes next.</p>
+    <div>
+      <div class="fact-label">location</div>
+      <div class="fact-val">Kyiv, Ukraine</div>
+    </div>
+    <div>
+      <div class="fact-label">languages</div>
+      <div class="fact-val">Ukrainian · English</div>
+    </div>
+    <div>
+      <div class="fact-label">education</div>
+      <div class="fact-val">GoIT Fullstack · KPI</div>
+    </div>
+    <div>
+      <div class="fact-label">availability</div>
+      <div class="fact-val">Open — remote / freelance</div>
+    </div>
+  </div>
+
+  <div class="section-label">contact</div>
+
+  <div class="links-row">
+    <a class="link-item" href="https://github.com/AndriyTkh">GitHub</a>
+    <a class="link-item" href="https://yajix.itch.io">itch.io</a>
+    <a class="link-item" href="#">LinkedIn</a>
+    <a class="link-item" href="mailto:">Email</a>
+  </div>
+
+  <div class="footer">
+    <span class="footer-txt">© 2026 Andrii Tkhorenko</span>
+    <span class="footer-txt" id="glyph-footer"></span>
+  </div>
+
+</div>
+</div>
+
+<script>
+const aurebesh = {
+  A:'M 2,14 L 7,2 L 12,14',
+  B:'M 2,2 L 2,14 M 2,2 Q 10,2 10,8 Q 10,14 2,14 M 2,8 L 8,8',
+  C:'M 12,3 Q 2,2 2,8 Q 2,14 12,13',
+  D:'M 2,2 L 2,14 M 2,2 Q 13,2 13,8 Q 13,14 2,14',
+  E:'M 12,2 L 2,2 L 2,14 L 12,14 M 2,8 L 9,8',
+  F:'M 2,14 L 2,2 L 12,2 M 2,8 L 9,8',
+  G:'M 11,3 Q 2,2 2,8 Q 2,14 11,13 M 11,8 L 7,8',
+  H:'M 2,2 L 2,14 M 12,2 L 12,14 M 2,8 L 12,8',
+  I:'M 5,2 L 9,2 M 7,2 L 7,14 M 5,14 L 9,14',
+  J:'M 9,2 L 9,11 Q 9,14 5,14 Q 2,14 2,11',
+  K:'M 2,2 L 2,14 M 12,2 L 2,8 L 12,14',
+  L:'M 2,2 L 2,14 L 12,14',
+  M:'M 2,14 L 2,2 L 7,8 L 12,2 L 12,14',
+  N:'M 2,14 L 2,2 L 12,14 L 12,2',
+  O:'M 7,2 Q 2,2 2,8 Q 2,14 7,14 Q 12,14 12,8 Q 12,2 7,2',
+  P:'M 2,14 L 2,2 M 2,2 Q 11,2 11,7 Q 11,12 2,8',
+  Q:'M 7,2 Q 2,2 2,8 Q 2,14 7,14 Q 12,14 12,8 Q 12,2 7,2 M 10,11 L 13,14',
+  R:'M 2,14 L 2,2 M 2,2 Q 11,2 11,7 Q 11,12 2,8 M 7,8 L 12,14',
+  S:'M 12,3 Q 2,2 2,7 Q 2,9 12,9 Q 12,14 2,13',
+  T:'M 2,2 L 12,2 M 7,2 L 7,14',
+  U:'M 2,2 L 2,11 Q 2,14 7,14 Q 12,14 12,11 L 12,2',
+  V:'M 2,2 L 7,14 L 12,2',
+  W:'M 2,2 L 4,14 L 7,8 L 10,14 L 12,2',
+  X:'M 2,2 L 12,14 M 12,2 L 2,14',
+  Y:'M 2,2 L 7,8 L 12,2 M 7,8 L 7,14',
+  Z:'M 2,2 L 12,2 L 2,14 L 12,14'
+};
+
+function glyphSVG(ch, size) {
+  const d = aurebesh[ch.toUpperCase()];
+  if (!d) return '';
+  const s = size || 16;
+  const scale = s / 16;
+  return `<svg width="${s}" height="${s}" viewBox="0 0 14 16" style="display:inline-block;vertical-align:middle"><path d="${d}" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+}
+
+function wordToGlyphs(word, size) {
+  return word.toUpperCase().split('').filter(c => aurebesh[c]).map(c => glyphSVG(c, size)).join('');
+}
+
+document.getElementById('banner-top').innerHTML = wordToGlyphs('ANDRIY TKHORENKO FULLSTACK DEVELOPER', 11);
+document.getElementById('glyph-footer').innerHTML = wordToGlyphs('ANDRII', 10);
+
+const canvas = document.getElementById('glyphs');
+const ctx = canvas.getContext('2d');
+
+function resize() {
+  canvas.width = canvas.offsetWidth;
+  canvas.height = canvas.offsetHeight;
+  draw();
+}
+
+function drawGlyph(ctx, ch, x, y, size, alpha) {
+  const d = aurebesh[ch];
+  if (!d) return;
+  const scale = size / 16;
+  ctx.save();
+  ctx.translate(x, y);
+  ctx.scale(scale, scale);
+  ctx.globalAlpha = alpha;
+  ctx.strokeStyle = '#ffffff';
+  ctx.lineWidth = 1.5 / scale;
+  ctx.lineCap = 'round';
+  ctx.lineJoin = 'round';
+  const p = new Path2D(d);
+  ctx.stroke(p);
+  ctx.restore();
+}
+
+function draw() {
+  const W = canvas.width, H = canvas.height;
+  ctx.clearRect(0, 0, W, H);
+  const letters = Object.keys(aurebesh);
+  const rng = (seed) => {
+    let s = seed;
+    return () => { s = (s * 16807 + 0) % 2147483647; return (s - 1) / 2147483646; };
+  };
+  const rand = rng(42);
+  const count = Math.floor((W * H) / 8000);
+  for (let i = 0; i < count; i++) {
+    const x = rand() * W;
+    const y = rand() * H;
+    const size = 14 + rand() * 28;
+    const alpha = 0.04 + rand() * 0.18;
+    const ch = letters[Math.floor(rand() * letters.length)];
+    drawGlyph(ctx, ch, x, y, size, alpha);
+  }
+}
+
+resize();
+window.addEventListener('resize', resize);
+</script>
