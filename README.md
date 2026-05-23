@@ -1,5 +1,7 @@
 <div align="center">
-  <img src="banner.svg" width="100%" alt="Andrii Tkhorenko" />
+  <a href="https://andriytkh.github.io/AndriyTkh">
+    <img src="banner.svg" width="100%" alt="Andrii Tkhorenko" />
+  </a>
 </div>
 
 <br>
